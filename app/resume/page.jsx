@@ -53,7 +53,7 @@ const about = {
 
     {
       feildName: "Experiance:",
-      feildValue: "2+ Years",
+      feildValue: "4+ Years",
     },
 
     {
