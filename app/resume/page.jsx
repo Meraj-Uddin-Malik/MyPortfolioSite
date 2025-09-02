@@ -63,7 +63,7 @@ const about = {
 
     {
       feildName: "Email:",
-      feildValue: "merajuddinmalilk136@gmail.com",
+      feildValue: "merajuddin618@gmail.com",
     },
 
     {
