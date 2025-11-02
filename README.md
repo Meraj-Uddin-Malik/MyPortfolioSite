@@ -12,6 +12,3 @@ git remote remove origin  <!-- remove existing remote repo -->
 
 
 # MyProtfolioSite
-
-adding for git contribution 
-remove the content from the responsibility 
