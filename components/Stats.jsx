@@ -39,6 +39,7 @@ const Stats = () => {
                   end={item.num}
                   duration={5}
                   delay={2}
+                  suffix="+"  
                   className="text-4xl xl:text-6xl font-extrabold"
                 />
                 <p
