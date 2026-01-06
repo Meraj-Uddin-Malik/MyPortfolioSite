@@ -3,24 +3,32 @@
 "use client";
 import CountUp from "react-countup";
 
+// const stats = [
+//   {
+//     num: "4+",
+//     Text: "Years of Experience",
+//   },
+//   {
+//     num: 05,
+//     Text: "Projets Completed",
+//   },
+//   {
+//     num: 10 ,"+"
+//     Text: "Technologies Knowledge",
+//   },
+//   {
+//     num: 234,
+//     Text: "Code Commits",
+//   },
+// ];
+
 const stats = [
-  {
-    num: "4+",
-    Text: "Years of Experience",
-  },
-  {
-    num: 05,
-    Text: "Projets Completed",
-  },
-  {
-    num: 10 ,"+"
-    Text: "Technologies Knowledge",
-  },
-  {
-    num: 234,
-    Text: "Code Commits",
-  },
+  { num: "4+", Text: "Years of Experience" },
+  { num: "5+", Text: "Projects Completed" },
+  { num: "10+", Text: "Technologies Knowledge" },
+  { num: "234+", Text: "Code Commits" },
 ];
+
 
 const Stats = () => {
   return (
