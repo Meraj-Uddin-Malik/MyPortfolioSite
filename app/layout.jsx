@@ -16,7 +16,7 @@ const playfair = Playfair({
 
 export const metadata = {
   title: "Meraj Uddin Portfolio",
-  description: "",
+  description: "Meraj Uddin Malik is a Computer Science student and Flutter and MERN stack developer. Explore my projects, skills, and professional journey.",
 };
 
 export default function RootLayout({ children }) {
