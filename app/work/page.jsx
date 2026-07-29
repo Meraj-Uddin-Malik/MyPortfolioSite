@@ -1,28 +1,9 @@
-"use client";
-
-import { motion } from "framer-motion";
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@radix-ui/react-tooltip";
-import Link from "next/link";
-
-//component import
-import WorkSliderBtns from "@/components/WorkSliderBtns";
-import Image from "next/image";
-
 const projects = [
   {
     num: "01",
-    category: "Wesite Designing",
-    title: "project 1",
-    desciption: "Created Markhore Adventure, a travel website using HTML, CSS, jQuery, Bootstrap, and media queries. Enhanced functionality with JavaScript for dynamic content and responsive design.",
+    category: "Website Designing",
+    title: "Markhore Adventure",
+    desciption: "Built Markhore Adventure, a fully responsive travel and tourism website using HTML, CSS, Bootstrap and jQuery, featuring tour packages, an image gallery, and booking information for desktop and mobile users.",
     stack: [
       { name: "HTML5" },
       { name: "CSS3" },
@@ -30,34 +11,33 @@ const projects = [
       { name: "Bootstrap" },
       { name: "MediaQueries" },
       { name: "JQuery" },
-    ],
+      ],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://meraj-uddin-malik.github.io/Markhore-Adventure/",
+    github: "https://github.com/Meraj-Uddin-Malik/Markhore-Adventure",
   },
 
   {
     num: "02",
     category: "Desktop App",
-    title: "project 2",
-    desciption:
-      "Developed a POS Management System using C# with the MetoFramework and SQL. Integrated Crystal Reports for comprehensive data analysis and features like inventory tracking, sales reporting, and user management.",
+    title: "POS Management System",
+    desciption: "Developed a desktop Point-of-Sale management system in C# with SQL Server, featuring inventory control, billing and receipts, user authentication, and Crystal Reports-based sales reporting for retail shops.",
     stack: [
       { name: "C#" },
-      { name: "Metroframework" },
-      { name: "Crysral Report" },
+      { name: "MetroFramework" },
+      { name: "Crystal Report" },
       { name: "SQL" },
-    ],
+      ],
     image: "/assets/work/thumb2.png",
     live: "",
-    github: "",
-  },
-
+    github: "https://github.com/Meraj-Uddin-Malik/POS-Managment-System-App",
+},
+  
   {
     num: "03",
-    category: " Web Development",
-    title: "project 3",
-    desciption: "Developed Venyou4You, an online venue reservation system using PHP, MySQL, HTML, CSS, Bootstrap, JavaScript, and jQuery. Enabled user-friendly booking with dynamic features and responsive design.",
+    category: "Web Development",
+    title: "VenYou4You",
+    desciption: "Developed VenYou4You, a PHP and MySQL venue-booking platform for banquet halls, catering, decor and rental cars, with venue search, package comparison, date reservation, and a vendor/admin dashboard.",
     stack: [
       { name: "HTML5" },
       { name: "CSS3" },
@@ -65,17 +45,17 @@ const projects = [
       { name: "MediaQueries" },
       { name: "PHP" },
       { name: "MySql" },
-    ],
+      ],
     image: "/assets/work/thumb3.png",
     live: "",
-    github: "",
+    github: "https://github.com/Meraj-Uddin-Malik/VenYou4You",
   },
 
   {
     num: "04",
     category: "Web & Mobile App",
-    title: "project 3",
-    desciption: "Working on the PRE FIR Complaint System, a web and mobile app using Flutter, Dart, Node.js, Express, and Aqueduct. Designed in Figma, the project is in progress and aims to streamline complaint filing.",
+    title: "Pre FIR Complaint System",
+    desciption: "Final Year Project (Award Winner) built for Sindh Police: a Flutter mobile app that lets citizens register and track FIRs, locate nearby police stations, browse job openings, escalate complaints to the IG Complaint Cell, and access public safety tips.",
     stack: [
       { name: "Figma" },
       { name: "Dart" },
@@ -83,12 +63,12 @@ const projects = [
       { name: "NodeJs" },
       { name: "AQUEDUCT" },
       { name: "Firebase" },
-    ],
+      ],
     image: "/assets/work/thumb2.png",
     live: "",
-    github: "",
+    github: "https://github.com/Meraj-Uddin-Malik/Final-Year-Project",
   },
-];
+  ];
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
